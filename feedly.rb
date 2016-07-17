@@ -24,7 +24,7 @@ contents['items'].shuffle.each do |item|
 
   `osascript -e 'display notification "#{title}" with title "Matome Feed" sound name "Pop"'`
   `osascript -e 'set volume output volume 37'`
-  `say #{short}`
+  `say '#{short}'`
   `osascript -e 'set volume output volume 63'`
 
   sleep config['sleep']
